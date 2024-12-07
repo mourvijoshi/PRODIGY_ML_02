@@ -1,42 +1,43 @@
-Here’s a well-structured **README.md** file for your GitHub repository based on the given Python script:
-
----
 
 # Customer Segmentation Using K-Means Clustering
 
-This project demonstrates customer segmentation using K-Means clustering on a dataset of mall customers. The script performs data preprocessing, applies clustering, calculates distances to centroids, and visualizes the results with insightful plots.
+This project, hosted on [GitHub](https://github.com/mourvijoshi/PRODIGY_ML_02.git), demonstrates customer segmentation using K-Means clustering on a dataset of mall customers. The script involves preprocessing, clustering, and visualizing the data to extract meaningful insights.
 
 ---
 
 ## Features
 - **Data Preprocessing:**
-  - Cleaned column names.
+  - Cleaned column names to ensure consistency.
   - Selected relevant features: `Annual Income (k$)` and `Spending Score (1-100)`.
   - Standardized features using `StandardScaler`.
 
 - **Clustering:**
-  - Applied K-Means clustering with 3 clusters.
-  - Computed distances to cluster centroids and appended them to the dataset.
+  - Applied K-Means clustering to segment customers into 3 clusters.
+  - Computed distances to cluster centroids for analysis.
 
 - **Visualization:**
-  - Scatter plot of clusters.
-  - Distribution of customers per cluster.
-  - Histogram of distances to centroids for each cluster.
+  - Scatter plot of clusters based on features.
+  - Distribution of customers across clusters.
+  - Histograms of distances to centroids for each cluster.
 
 - **Output:**
-  - Updated dataset with cluster assignments and distances saved as `mall_with_distances.csv`.
+  - Updated dataset saved as `mall_with_distances.csv`, which includes:
+    - Cluster assignments.
+    - Distances to centroids.
 
 ---
 
 ## Installation
 
-### **1. Clone the repository**
+### 1. Clone the Repository
+Clone this repository to your local machine:
+
 ```bash
-git clone https://github.com/<your-username>/<repository-name>.git
+git clone https://github.com/mourvijoshi/PRODIGY_ML_02.git
 ```
 
-### **2. Install required libraries**
-Ensure you have Python installed. Install dependencies using:
+### 2. Install Required Libraries
+Install dependencies using `pip`:
 
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn
@@ -45,9 +46,9 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 ---
 
 ## Dataset
-The project uses the `Mall_Customers.csv` dataset. Ensure the file is placed in the root folder of the project.
+The project uses the `Mall_Customers.csv` dataset. Ensure this file is located in the root directory.
 
-### Sample Structure of `Mall_Customers.csv`:
+### Sample Dataset Columns:
 | CustomerID | Gender | Age | Annual Income (k$) | Spending Score (1-100) |
 |------------|--------|-----|--------------------|-------------------------|
 | 1          | Male   | 19  | 15                 | 39                      |
@@ -56,26 +57,22 @@ The project uses the `Mall_Customers.csv` dataset. Ensure the file is placed in 
 ---
 
 ## How to Run
-1. Place the dataset (`Mall_Customers.csv`) in the same directory as the script.
+1. Place `Mall_Customers.csv` in the same folder as the script.
 2. Execute the script:
 
    ```bash
-   python script.py
+   python task2.py
    ```
 
-3. View the generated visualizations and inspect the output file `mall_with_distances.csv`.
+3. The output file `mall_with_distances.csv` will be generated in the project directory.
+4. View the generated visualizations for insights into clustering results.
 
 ---
 
 ## Visualizations
-### **1. Customer Segments**
-Scatter plot showing customer segments based on annual income and spending score.
-
-### **2. Cluster Distribution**
-Bar chart of the number of customers in each cluster.
-
-### **3. Distances to Centroids**
-Histograms representing the distribution of distances to centroids for each cluster.
+1. **Customer Segments:** A scatter plot showing clusters of customers based on income and spending score.
+2. **Cluster Distribution:** A bar chart representing the number of customers in each cluster.
+3. **Distances to Centroids:** Histograms showing the distribution of distances to centroids for each cluster.
 
 ---
 
@@ -83,21 +80,19 @@ Histograms representing the distribution of distances to centroids for each clus
 ```
 .
 ├── Mall_Customers.csv        # Input dataset
-├── mall_with_distances.csv   # Output dataset with cluster assignments and distances
-├── task2.py                 # Main Python script
-└── README.md                 # Project documentation
+├── mall_with_distances.csv   # Output dataset with cluster data
+├── task2.py                 # Python script for clustering
+├── README.md                 # Project documentation
 ```
 
 ---
 
 ## Contributing
-Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request.
+Feel free to contribute! Fork the repository, create a branch for your feature, and submit a pull request.
 
 ---
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+### Repository Link:
+Access the project on GitHub: [PRODIGY_ML_02](https://github.com/mourvijoshi/PRODIGY_ML_02.git)
 
 ---
-
-Let me know if you'd like me to adjust anything! 😊
